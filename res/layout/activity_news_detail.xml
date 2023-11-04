@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Activity.NewsDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/newsdetail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/newsdetail_publish_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:textSize="20dp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:id="@+id/newsdetail_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:textSize="20dp"
+                android:textColor="@color/gray"/>
+
+
+            <Button
+                android:id="@+id/set_like_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="收藏" />
+
+            <VideoView
+                android:id="@+id/newsdetail_video"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <ImageView
+                android:id="@+id/newsdetail_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="0dp"
+                />
+
+
+            <TextView
+                android:id="@+id/newsdetail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="0dp"
+                android:textSize="20dp"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

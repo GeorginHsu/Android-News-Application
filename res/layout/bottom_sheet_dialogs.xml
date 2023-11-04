@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet_dialogs">
+
+
+    <CheckBox
+        android:id="@+id/checkBoxAmusement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="娱乐"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxMilitary"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMilitary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="军事"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxEducation"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxAmusement"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="教育"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxCulture"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxMilitary"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文化"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxEducation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="健康"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxFinance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAll" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFinance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="财经"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxSports"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxHealth"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxAmusement" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体育"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxCar"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxFinance"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxMilitary" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="汽车"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxTechonlogy"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxSports"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEducation" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTechonlogy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="科技"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxCar"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCulture" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="社会"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxHealth" />
+
+    <Button
+        android:id="@+id/determine_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="确定"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxAmusement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
