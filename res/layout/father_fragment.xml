@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_father"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.FatherFragment">
+
+    <TextView
+        android:id="@+id/father_net_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        />
+
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayoutPageOne"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 添加要刷新的视图，例如 RecyclerView、ListView 等 -->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewPageOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
